@@ -1,0 +1,34 @@
+<!doctype html>
+<meta charset="utf-8">
+<script src=../../js/api.js></script>
+<script>
+onload = function(){
+	var articleID = api.getArgument("articleID");
+	setTimeout(function(){
+		var doc = api.hget("../../api/document/math/" + articleID + ".txt?articleID=" + articleID + "&pid=" + parseInt(Math.random().toString().substring(3)).toString(16));
+		if (doc.status != 200)
+		{
+			document.getElementById("frame").innerHTML = "资源文件请求失败！<input type=button onclick=location.reload(); value=重试><input type=button onclick=javascript:location.href='../' value=主页>";
+		} else {
+			document.getElementById("frame").innerHTML = "<iframe height=1024px width=1024px border=1 id=document-frame src=frame.html>你的浏览器不支持此框架，请更换浏览器</iframe>";
+			document.getElementById("document-frame").contentWindow.onload = function(){
+				document.getElementById("document-frame").contentWindow.document.getElementById("document").innerHTML = doc.responseText;
+			};
+			var w = document.body.clientWidth;
+			var h = document.body.clientHeight;
+			document.getElementById("document-frame").height = h;
+			document.getElementById("document-frame").width = w;
+		}
+	},Math.random()*2000);
+};
+</script>
+<pre>
+<div style='text-align:center'>
+<span style='font-size:3em;text-align:center'>憨憨数学</span>
+<br>
+<input type=button value=刷新 onclick=javascript:location.reload();><input type=button value=返回 onclick=javascript:location.href='../'>
+</div>
+<div id=frame>
+正在请求资源文件......
+</div>
+</pre>
