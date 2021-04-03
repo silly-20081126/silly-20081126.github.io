@@ -73,4 +73,69 @@ api.getAllArgument = function() {
 api.getArgument = function(key) {
 	return this.getAllArgument()[key];
 };
+api.func = {};
+api.func.site_disable_operation = function() {
+document.oncopy = function (event) {
+if (window.event) {
+event = window.event;
+}
+try {
+var the = event.srcElement;
+if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+return false;
+}
+return true;
+} catch (e) {
+return false;
+}
+}
+document.onpaste = function (event) {
+if (window.event) {
+event = window.event;
+}
+try {
+var the = event.srcElement;
+if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+return false;
+}
+return true;
+} catch (e) {
+return false;
+}
+}
+document.oncontextmenu = function (event) {
+if (window.event) {
+event = window.event;
+}
+try {
+var the = event.srcElement;
+if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+return false;
+}
+return true;
+} catch (e) {
+return false;
+}
+}
+document.onselectstart = function (event) {
+if (window.event) {
+event = window.event;
+}
+try {
+var the = event.srcElement;
+if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+return false;
+}
+return true;
+} catch (e) {
+return false;
+}
+}
+document.oncut = function (event) {
+if (window.event) {
+event = window.event;
+}
+event.preventDefault();
+}
+};
 var $ = api;
