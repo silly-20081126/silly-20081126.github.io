@@ -45,7 +45,27 @@ setTimeout(function(){
 	while (i < arr.length)
 	{
 		//Set the contents of the elements.
-		arr[i].innerHTML = location.href + "<br><img src=https://api.no0a.cn/api/qrcode/query?url=" + location.href + " height=64px width=64px alt='QR code' class=cp.box.qrcode>";
+		arr[i].innerHTML = parent.location.href + "<br><img src=https://api.no0a.cn/api/qrcode/query?url=" + parent.location.href + " height=96px width=96px alt='QR code' class=cp.box.qrcode>";
 		i++;
 	}
 },1500);
+//Create twenty watermarks.
+setTimeout(function(){
+	var i = 0;
+	while (i < 21)
+	{
+		let e = document.createElement("span");
+		e.style.position = "fixed";
+		e.style["font-size"] = "3.5em";
+		//Set the size.
+		e.style.top = parseInt(Math.random() * 100) + "%";
+		e.style.left = parseInt(Math.random() * 100) - 5 + "%";
+		//Set the positioning.
+		e.innerHTML = "禁止翻印";
+		//Set the content.
+		e.style.opacity = 0.2;
+		//Set opacity
+		document.body.append(e);
+		i++;
+	}
+},200);
