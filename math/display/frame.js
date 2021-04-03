@@ -29,6 +29,17 @@ setTimeout(function(){
 				//Set the height of the frame.
 				document.getElementById(ele_id).width = dat.width;
 				//Set the width of the frame.
+				setTimeout(function(){
+					//Correct the size of the frame.
+					document.getElementById(ele_id).height = document.getElementById(ele_id).contentWindow.document.body.scrollHeight+5;
+					document.getElementById(ele_id).width = document.getElementById(ele_id).contentWindow.document.body.scrollWidth+5;	
+					console.log(document.getElementById(ele_id).contentWindow.document.body.scrollHeight,document.getElementById(ele_id).contentWindow.document.body.scrollWidth);			
+				},200);
+				setInterval(function(){
+					//Correct the size of the frame.
+					document.getElementById(ele_id).height = document.getElementById(ele_id).contentWindow.document.body.scrollHeight;
+					document.getElementById(ele_id).width = document.getElementById(ele_id).contentWindow.document.body.scrollWidth;				
+				},200);
 			}
 		} catch (e) { console.error(e); //Parse failed.
 		}
@@ -65,6 +76,7 @@ setTimeout(function(){
 		//Set the content.
 		e.style.opacity = 0.2;
 		//Set opacity
+		e.style["z-index"] = -1;
 		document.body.append(e);
 		i++;
 	}
