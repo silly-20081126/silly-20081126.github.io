@@ -17,3 +17,13 @@ onload = function(){
 		}
 	},Math.random()*2000);
 };
+function view_pdf()
+{
+	var pdf_url = "../../tools/parse/pdf?../../../api/document/math/" + api.getArgument("articleID") + ".pdf";
+	document.getElementById("pdf-view-box").className = "show-element";
+	document.getElementById("pdf-view-frame").src = pdf_url;
+};
+function close_view_pdf()
+{
+	document.getElementById("pdf-view-box").className = "hide-element";
+};
