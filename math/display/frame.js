@@ -81,3 +81,5 @@ setTimeout(function(){
 		i++;
 	}
 },200);
+//Prevent page theft
+api.func.site_disable_operation(true);

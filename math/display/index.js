@@ -1,4 +1,5 @@
 onload = function(){
+	api.func.site_disable_operation(true);
 	var articleID = api.getArgument("articleID");
 	setTimeout(function(){
 		var doc = api.hget("../../api/document/math/" + articleID + ".txt?articleID=" + articleID + "&pid=" + parseInt(Math.random().toString().substring(3)).toString(16));
