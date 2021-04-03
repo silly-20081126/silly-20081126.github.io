@@ -15,6 +15,18 @@
 <li style='width:800px'> (ii) 有理数在实数中是稠密的，也就是说，在任何两个不同的实数之间必存在着有理数。同样无理数也是稠密的，在任何两个不同的实数之间也必定存在着无理数。</li>
 <li style='width:800px'> (iii) 有理数与有理数的和或差认为有理数。有理数与无理数的和或差为无理数。无理数与无理数的和或差可能仍为无理数，也可能为有理数。</li>
 </ul>
+<span class=wait-for-rendering id={"width":"800px","height":"250px"}>在观察各种运动过程的时候，我们还发现，有些变量具有一定的变化范围。例如自由落体的下降时间和距离只有在落体落到地面以前才有意义。<br>变量的变化范围，也就是变量的取值范围，在取实数值的时候，我们往往用区间表示：设$a$,$b$是有限数，$a &lt; b$，满足不等式$a \leqslant x \leqslant b$的$x$全体组成一个闭区间，记为$[a,b]$（在数轴上用实心点表示），也可以说：变量$x$的变化范围为闭区间$[a,b]$，满足不等式$a &lt; x &lt; b$的$x$全体组成开区间$(a,b)$（在数轴上用空心点表示）。而满足不等式$a &lt; x \leqslant b$或$ a \leqslant x &lt; b$的$x$全体组成半开半闭的区间$(a,b]$或$[a,b)$;如果变量$x$能够取实数轴上所有的数，我们把它的变化范围记为$(-\infty , +\infty ) $，在这里"$\infty$"并不表示数量，它只不过是一个记号，前面的"+"，"-"表示方向。有时候，在并不一定要指明是开的或闭的场合，我们也常用$X$,$Y$等来表示区间。
+</span><br>
+<a href=../../tools/questions?pid=54b39a2cee3&chapter=1 target=_blank>去做题</a>
+</p>
+<hr>
+<p>
+<strong>二、函数</strong><br>
+<span class=wait-for-rendering id={"width":"800px","height":"500px"}>在初一的代数中我们都接触过代数式：<i>由运算符号和括号把数或字母连接而成的式子叫做<font color=red>代数式</font></i><br>像$x$、$a^2+b^2$、$e^{i \pi } +1 $等都是代数式，函数的解析式也和代数式类似。<br>以$2^y=x$为例，即$y=\log_2{x}$，在这个等式中，$x$的值是可以变化的，$y$的值会随着$x$的值而变化。我们把$x$称为<strong><font color=red>自变量</font></strong>，把会随着$x$的值变化而变化的$y$称为是<strong><font color=red>因变量</font></strong><br>当$x$等于$1$的时候，$y$的值等于$0$<br>当$x$等于$2$的时候，$y$的值等于$1$<br>当$x$等于$5$的时候，$y$的值约为$2.321928094887362$<br>当$x$等于$1024$的时候，$y$的值约为$10$<br>当$x$等于$4294967296$的时候，$y$的值是$32$<br>当$x$等于$18446744073709551616$的时候，$y$的值是$64$<br>当$x$等于$20081126$的时候，$y$的值约为$24.259336831362322$<br>......<br>$y$和$x$之间存在确定的依赖关系，对于某个范围内$X$内的每一个实数$x$，可以按确定的规律$f$，得到$Y$内唯一一个实数$y$与这个$x$对于，我们就称<font color=red><strong>$f$在$X$上的函数</strong></font>，它在x的数值（称为函数值）是$y$，记为$f(x)$，即$y=f(x)$<br>我们把表示$x$和$y$之间的数学式子称为<font color=red><strong>函数解析式</strong></font>。<br>注：在初中数学课本这样定义函数：<br><i style='font-size:0.8em'>在某个变化过程中由两个变量，设为$x$和$y$，如果在变量$x$的允许取值范围内，变量$y$随着$x$的变化而变化，它们之间存在确定的依赖关系，那么变量$y$叫做变量$x$的<font color=red>函数</font>，$x$叫做自变量<br>这种表示两个变量之间依赖关系的数学式子称为<font color=red>函数解析式</font></i></span><br>
+<span class=wait-for-rendering id={"width":"800px","height":"190px"}>
+我们称$x$是自变量，$y$是因变量，又称$X$是函数$f$的<font color=red><strong>定义域</strong></font>，它表示对$X$内的任何实数$x$，在$f$的作用下是有意义的，简单地说，$f(x)$是有意义的，当$x$遍取$X$内的任何实数时，相应的函数值$f(x)$所组成的范围就做函数$f$的<strong><font color=red>值域</font></strong>，要注意的是：值域并不一定就是$Y$，它当然不会比$Y$大，但它可能比$Y$小<br>如果变量$y$时自变量$x$的函数，那么对于$x$在定义域内去顶的一个值$a$，变量$y$的对应值叫做当$x=a$时的<font color=red><strong>函数值</strong></font>
+</span><br>
+<a href=../../tools/questions?pid=54b39a2cee3&chapter=2 target=_blank>去做题</a>
 </p>
 </div>
 </div>
