@@ -3,9 +3,9 @@
 
 //Timeout
 setTimeout(function(){
-	var arr = document.getElementsByClassName("wait-for-rendering");
+	let arr = document.getElementsByClassName("wait-for-rendering");
 	console.log(arr);
-	//Query the elements
+	//Select the elements
 	var i = 0;
 	//Until i > arr's length
 	while (i < arr.length)
@@ -35,3 +35,17 @@ setTimeout(function(){
 		i++;
 	}
 },1000);
+
+//Show the infomation of the copyright.
+setTimeout(function(){
+	//Select the elements.
+	let arr = document.getElementsByClassName("cp.box");
+	var i = 0;
+	//Until i > arr's length
+	while (i < arr.length)
+	{
+		//Set the contents of the elements.
+		arr[i].innerHTML = location.href + "<br><img src=https://api.no0a.cn/api/qrcode/query?url=" + location.href + " height=64px width=64px alt='QR code' class=cp.box.qrcode>";
+		i++;
+	}
+},1500);
