@@ -1,6 +1,11 @@
 <!doctype html>
 <meta charset="utf-8">
 <script src=../../js/api.js></script>
+<style>
+.hide-element {
+	display:none;
+}
+</style>
 <script src=index.js></script>
 <pre>
 <div style='text-align:center'>
@@ -11,5 +16,12 @@
 </div>
 <div id=frame>
 正在请求资源文件......
+</div>
+<div>
+<div id=pdf-view-button class=show-element style='color:black;background:skyblue;font-size:2em;position:fixed;bottom:0%;right:0%' onclick=javascript:view_pdf();>pdf在线查看</div>
+<div id=pdf-view-box class=hide-element style='color:black;position:fixed;top:10%;left:10%;height:80%;width:80%;overflow:auto'>
+<div id=pdf-view-close-button style='position:absolute;right:0%;top:0%;color:black;background:red;font-size:2.5em' onclick=javascript:close_view_pdf();>X</div><br>
+<iframe id=pdf-view-frame border=1 height=100% width=100%>Not support the frames.</iframe>
+</div>
 </div>
 </pre>
