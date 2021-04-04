@@ -1,4 +1,14 @@
 
+//Listening to the elements.
+var s = setInterval(function(){
+var ect = document.getElementById("document").innerHTML;
+if (ect == "" || ect == " ")
+{
+	//When the element is empty
+	//Do nothing.
+} else {
+	clearInterval(s);
+	//Clear the listening event
 //Render
 
 //Timeout
@@ -83,3 +93,5 @@ setTimeout(function(){
 },200);
 //Prevent page theft
 api.func.site_disable_operation(true);
+}
+},200);
