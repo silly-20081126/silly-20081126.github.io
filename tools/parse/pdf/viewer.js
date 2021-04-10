@@ -49,7 +49,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   defaultUrl: {
-    value: "compressed.tracemonkey-pldi-09.pdf",
+    value: location.search.substring(1),
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
@@ -206,7 +206,7 @@ const defaultOptions = {
     kind: OptionKind.WORKER
   },
   workerSrc: {
-    value: "../build/pdf.worker.js",
+    value: "https://mozilla.github.io/pdf.js/build/pdf.worker.js",
     kind: OptionKind.WORKER
   }
 };
