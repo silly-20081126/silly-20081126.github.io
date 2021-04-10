@@ -4,15 +4,15 @@
 <title>算24点</title>
 <script src=operation.js></script>
 <center><pre>
-请输入四个数字
-<input type=text class=input-area maxlength=8>
-<input type=text class=input-area maxlength=8>
-<input type=text class=input-area maxlength=8>
-<input type=text class=input-area maxlength=8>
-<input type=button value=计算 onclick=javascript:calc();>
+<span style='font-size:5em'>请输入四个数字</span>
+<input type=text class=input-area maxlength=8 style='height:80px;width:800px;font-size:40px'>
+<input type=text class=input-area maxlength=8 style='height:80px;width:800px;font-size:40px'>
+<input type=text class=input-area maxlength=8 style='height:80px;width:800px;font-size:40px'>
+<input type=text class=input-area maxlength=8 style='height:80px;width:800px;font-size:40px'>
+<input type=button value=计算 onclick=javascript:calc(); style='height:80px;width:800px'>
 <hr>
 <div>
-<div id=output style='text-align:left;'></div>
+<div id=output style='text-align:left;font-size:2em;width:100%;height:100%;overflow:auto'></div>
 </div>
 <div>
 <div class=hide-element id=view_frame style='position:fixed;overflow:auto;height:80%;top:10%;left:10%;width:80%;background:skyblue;color:black'>
@@ -25,4 +25,10 @@
 .hide-element {
 	display:none;
 };
+.input-area {
+	font-size:3em;
+	height:10%;
+	width:80%;
+};
 </style>
+
