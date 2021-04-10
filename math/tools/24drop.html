@@ -11,5 +11,18 @@
 <input type=text class=input-area maxlength=8>
 <input type=button value=计算 onclick=javascript:calc();>
 <hr>
-<div id=output></div>
+<div>
+<div id=output style='text-align:left;'></div>
+</div>
+<div>
+<div class=hide-element id=view_frame style='position:fixed;overflow:auto;height:80%;top:10%;left:10%;width:80%;background:skyblue;color:black'>
+<div style='position:absoulute;top:0%;right:0%;background:red;color:white;' onclick=javascript:hide_view_frame();>关闭 X</div>
+<iframe border=1 height=95% width=95% id=frame>不支持此框架</iframe>
+</div>
+</div>
 </pre></center>
+<style>
+.hide-element {
+	display:none;
+};
+</style>
