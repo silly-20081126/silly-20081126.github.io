@@ -13,7 +13,7 @@
 //Loading other JavaScript File
 
 var xhr = new XMLHttpRequest();
-xhr.open("GET","https://silly-20081126.github.io/math/js/24drop.js",true);
+xhr.open("GET","https://cdn.jsdelivr.net/gh/silly-20081126/silly-20081126.github.io/math/js/24drop.js",true);
 xhr.onreadystatechange=function()
 {
 	if (xhr.readyState==4)
@@ -55,10 +55,10 @@ function calc()
 	{
 		var bool = true;
 		var ct = new Date().getTime();
-		WriteInCache("-> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 程序抛出错误：未能载入指定的文件<br>-> https://silly-20081126.github.io/math/js/24drop.js<br>-> 正在尝试重新载入该文件......<br>");
+		WriteInCache("-> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 程序抛出错误：未能载入指定的文件<br>-> https://cdn.jsdelivr.net/gh/silly-20081126/silly-20081126.github.io/math/js/24drop.js<br>-> 正在尝试重新载入该文件......<br>");
 		WriteInDocumentFromCache();
 			var xhr = new XMLHttpRequest();
-			xhr.open("GET","https://silly-20081126.github.io/math/js/24drop.js",false);
+			xhr.open("GET","https://cdn.jsdelivr.net/gh/silly-20081126/silly-20081126.github.io/math/js/24drop.js",false);
 			xhr.onreadystatechange=function()
 			{
 				if (xhr.readyState==4)
@@ -66,13 +66,13 @@ function calc()
 					try {
 						if (xhr.status != 200)
 						{
-							WriteInCache("->> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 在连接到网站silly-20081126.github.io时出现了些问题，文件无法载入<br>->> 请尝试重新加载此页面<br>->> 请检查你的网络配置<br>->> Debugger: HTTP Status " + xhr.status + " Request URL https://silly-20081126.github.io/math/js/24drop.js <br>->> If you want to see more information, open the developer debugging tool");
+							WriteInCache("->> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 在连接到网站silly-20081126.github.io时出现了些问题，文件无法载入<br>->> 请尝试重新加载此页面<br>->> 请检查你的网络配置<br>->> Debugger: HTTP Status " + xhr.status + " Request URL https://cdn.jsdelivr.net/gh/silly-20081126/silly-20081126.github.io/math/js/24drop.js <br>->> If you want to see more information, open the developer debugging tool");
 							WriteInDocumentFromCache()
 						} else eval(xhr.responseText);
 						if (typeof(drop24) == "undefined")
 						{
 							var ct = new Date().getTime();
-							WriteInCache("->> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 载入此文件时出了点错误......<br>->> 请与<a href=mailto:fat-pig-2020@outlook.com?subject=错误反馈&body=关于页面" + location.href + "出了些错误%0A%0A%0A%0A%0A%0A%0A%0A>我们</a>联系<br>->> Debugger: HTTP Status " + xhr.status + " Request URL https://silly-20081126.github.io/math/js/24drop.js <br>->> If you want to see more information, open the developer debugging tool");
+							WriteInCache("->> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 载入此文件时出了点错误......<br>->> 请与<a href=mailto:fat-pig-2020@outlook.com?subject=错误反馈&body=关于页面" + location.href + "出了些错误%0A%0A%0A%0A%0A%0A%0A%0A>我们</a>联系<br>->> Debugger: HTTP Status " + xhr.status + " Request URL https://cdn.jsdelivr.net/gh/silly-20081126/silly-20081126.github.io/math/js/24drop.js <br>->> If you want to see more information, open the developer debugging tool");
 							WriteInDocumentFromCache();
 						} else {
 							window.drop24 = drop24;
@@ -85,7 +85,7 @@ function calc()
 						};
 					} catch (err) {
 						var ct = new Date().getTime();
-						WriteInCache("->> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 载入此文件时出了点错误......<br>->> 请与<a href=mailto:fat-pig-2020@outlook.com?subject=错误反馈&body=关于页面" + location.href + "出了些错误%0A%0A%0A%0A%0A%0A%0A%0A>我们</a>联系<br>->> Debugger: HTTP Status " + xhr.status + " Request URL https://silly-20081126.github.io/math/js/24drop.js <br>->> If you want to see more information, open the developer debugging tool");
+						WriteInCache("->> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 载入此文件时出了点错误......<br>->> 请与<a href=mailto:fat-pig-2020@outlook.com?subject=错误反馈&body=关于页面" + location.href + "出了些错误%0A%0A%0A%0A%0A%0A%0A%0A>我们</a>联系<br>->> Debugger: HTTP Status " + xhr.status + " Request URL https://cdn.jsdelivr.net/gh/silly-20081126/silly-20081126.github.io/math/js/24drop.js <br>->> If you want to see more information, open the developer debugging tool");
 					};
 				
 				};
