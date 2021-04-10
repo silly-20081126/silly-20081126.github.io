@@ -125,7 +125,7 @@ function calc()
 	var link_exp = getBlobLinkAsText(all_obj_str);
 	//-----------------------
 	var ct = new Date().getTime();
-	WriteInCache("-> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 处理完毕<br>-> 程序共计算了" + result.all_object.length + "次 共得出" + result.result.length + "个答案<br>-><a id=download_answers download=Answer.txt>下载答案</a><input type=button value=预览答案 onclick=javascript:show_view_frame('" + link_res + "');><br>-><a id=download_all_exp download=AllExp.txt>下载程序验证过的所有算式</a><input type=button value=预览算式 onclick=javascript:show_view_frame('" + link_exp + "');>");
+	WriteInCache("-> [UTC <font color=blue>" + ct + "</font>] [<font color=blue>" + (ct - st) + "ms</font>] 处理完毕<br>-> 程序共计算了" + result.all_object.length + "次 共得出" + result.result.length + "个答案<br>-> 本题答案: <font color=red>" + result.result[0].exp + "=24</font> 更多答案请选择预览或下载答案</font><br>-><a id=download_answers download=Answer.txt>下载答案</a><input type=button value=预览答案 onclick=javascript:show_view_frame('" + link_res + "');><br>-><a id=download_all_exp download=AllExp.txt>下载程序验证过的所有算式</a><input type=button value=预览算式 onclick=javascript:show_view_frame('" + link_exp + "');>");
 	if (is_weixin())
 		WriteInCache("<br>-> <font color=red>微信浏览器可能不支持该程序，请选择使用系统默认浏览器打开<br>");
 	WriteInCache("<br><br>");
